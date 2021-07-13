@@ -3,6 +3,7 @@ package application;
 import entity.Contribuinte;
 import entity.PessoaFisica;
 import entity.PessoaJuridica;
+import jdk.nashorn.internal.ir.annotations.Reference;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -11,8 +12,14 @@ import java.util.Scanner;
 
 public class ImpostosApplication {
     public static void main(String[] args) {
-        Locale.setDefault(Locale.ENGLISH);
+        Locale.setDefault(Locale.ENGLISH);// formato fracionário americano
         Scanner sc = new Scanner(System.in);
+
+        /*
+        fazendo um upcasting na superclasse abstrata, dessa forma consguimos acessar as subclasses
+        utilizando-se do polimorfismo, alterando os métodos, e agrupando em uma lista única do tipo
+        Contribuinte.
+         */
         List<Contribuinte> list = new ArrayList<>();
 
         System.out.print("Digite quantos impostos à declarar: ");
