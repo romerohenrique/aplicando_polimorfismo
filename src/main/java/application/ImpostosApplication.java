@@ -3,7 +3,6 @@ package application;
 import entity.Contribuinte;
 import entity.PessoaFisica;
 import entity.PessoaJuridica;
-import jdk.nashorn.internal.ir.annotations.Reference;
 
 import java.util.ArrayList;
 import java.util.List;
