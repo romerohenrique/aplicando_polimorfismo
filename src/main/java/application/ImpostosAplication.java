@@ -1,7 +1,6 @@
 package application;
 
-import com.sun.scenario.effect.impl.sw.sse.SSEBlend_SRC_OUTPeer;
-import entity.Imposto;
+import entity.Contribuinte;
 import entity.PessoaFisica;
 import entity.PessoaJuridica;
 
@@ -14,7 +13,7 @@ public class ImpostosAplication {
     public static void main(String[] args) {
         Locale.setDefault(Locale.ENGLISH);
         Scanner sc = new Scanner(System.in);
-        List<Imposto> list = new ArrayList<>();
+        List<Contribuinte> list = new ArrayList<>();
 
         System.out.print("Digite quantos impostos à declarar: ");
         int n = sc.nextByte();
@@ -45,10 +44,10 @@ public class ImpostosAplication {
         System.out.println();
         double sum = 0.00;
         System.out.println("Impostos pagos:");
-        for (Imposto aux : list) {
+        for (Contribuinte aux : list) {
             System.out.println(aux.getNome() + ": $" + String.format("%.2f", aux.taxa()));
         }
-        for (Imposto imp : list) {
+        for (Contribuinte imp : list) {
             sum += imp.taxa();
         }
         System.out.println();

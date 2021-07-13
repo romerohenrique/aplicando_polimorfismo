@@ -1,6 +1,6 @@
 package entity;
 
-public class PessoaJuridica extends Imposto {
+public class PessoaJuridica extends Contribuinte {
     private Integer numeroDeEmpregados;
 
     public PessoaJuridica() {

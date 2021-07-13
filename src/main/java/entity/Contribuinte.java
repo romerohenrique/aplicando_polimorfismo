@@ -1,13 +1,13 @@
 package entity;
 
-public abstract class Imposto {
+public abstract class Contribuinte {
     protected String nome;
     protected Double rendaAnual;
 
-    public Imposto() {
+    public Contribuinte() {
     }
 
-    public Imposto(String nome, Double rendaAnual) {
+    public Contribuinte(String nome, Double rendaAnual) {
         this.nome = nome;
         this.rendaAnual = rendaAnual;
     }
