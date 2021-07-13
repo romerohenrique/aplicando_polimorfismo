@@ -9,7 +9,7 @@ import java.util.List;
 import java.util.Locale;
 import java.util.Scanner;
 
-public class ImpostosAplication {
+public class ImpostosApplication {
     public static void main(String[] args) {
         Locale.setDefault(Locale.ENGLISH);
         Scanner sc = new Scanner(System.in);
